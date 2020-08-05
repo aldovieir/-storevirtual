@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+﻿import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:shop/providers/auth.dart';
 import '../utils/app_routes.dart';
@@ -10,7 +10,7 @@ class AppDrawer extends StatelessWidget {
       child: Column(
         children: <Widget>[
           AppBar(
-            title: Text('Bem vindo Usuário!'),
+            title: Text('Bem vindo Usuário'),
             automaticallyImplyLeading: false,
           ),
           Divider(),
@@ -40,7 +40,7 @@ class AppDrawer extends StatelessWidget {
           Divider(),
           ListTile(
             leading: Icon(Icons.exit_to_app),
-            title: Text('Sair'),
+            title: Text('Logout'),
             onTap: () {
               Provider.of<Auth>(context, listen: false).logout();
             },
